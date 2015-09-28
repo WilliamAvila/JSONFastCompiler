@@ -1,0 +1,61 @@
+{
+  Assign:{
+       variable:"b",
+       value:{
+           Sum:{
+               IntLiteral:1,
+               Subtraction:{
+                   IntLiteral:100,
+                   IntLiteral:100
+               }
+           }
+       }
+  },
+
+     Print:{
+        value:{
+               Variable: "b"
+           }
+
+     },
+      If:{
+            condition:{
+             value:{
+                variable:"b"
+             },
+             operator:'==',
+             value:{
+                intliteral:0
+             }
+            },
+            code:{
+                 Print:{
+                    value:{
+                       StringLiteral: "Verdadero"
+                    }
+                }
+            }
+        },
+        For:{
+                value:{
+                    variable: "b"
+                },
+                initialValue:{
+                    intLiteral:0
+                },
+                finalValue:{
+                    intLiteral:10
+                },
+
+                code:{
+                        Print:{
+                            value:{
+                               StringLiteral: "*"
+                            }
+                        }
+                }
+
+          }
+
+},
+{}
